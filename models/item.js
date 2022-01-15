@@ -23,6 +23,18 @@ const Item = mongoose.model("Item", {
     type: String,
     trim: true,
   },
+  availability: {
+    type: String,
+    trim: true,
+  },
+  shipping: {
+    type: String,
+    trim: true,
+  },
+  weight: {
+    type: String,
+    trim: true,
+  }
 });
 
 module.exports = Item;

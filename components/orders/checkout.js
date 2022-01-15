@@ -6,4 +6,8 @@ router.get('/', function(req, res, next) {
   res.render('../components/orders/checkout');
 });
 
+router.get('/123', function(req, res, next) {
+  res.render('../components/orders/checkout');
+});
+
 module.exports = router;

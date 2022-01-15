@@ -30,6 +30,14 @@
 /* Template default CSS
 /*----------------------------------------*/
 
+.button-solid {
+    border: none;
+}
+.button-solid:focus {
+    border: none;
+    outline: none;
+}
+
 html,
 body {
 	height: 100%;
