@@ -97,7 +97,7 @@
                         <i class="fa fa-star"></i>
                         <i class="fa fa-star"></i>
                         <i class="fa fa-star-half-o"></i>
-                        <span>(18 reviews)</span>
+                        <span id="total-reviews"></span>
                     </div>
                     <div class="product__details__price">${{price}}</div>
                     <p>{{description}}</p>
@@ -131,7 +131,7 @@
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" data-toggle="tab" href="#tabs-3" role="tab"
-                                aria-selected="false">Reviews <span>(1)</span></a>
+                                aria-selected="false">Reviews <span id="total-reviews-tab"></span></a>
                         </li>
                     </ul>
                     <div class="tab-content">
@@ -334,9 +334,12 @@
             let rating = data.rating;
             let content = data.content;
             let customer = data.customer;
+            let total_ratings = 0;
+            let average_ratings = 0;
             let html = '';
             for(const rating of data){
                 html += '<h6 class="cust-name">' + rating.customer + '</h6>';
+                total_ratings += rating.rating;
                 for(let i=0; i<rating.rating; i++){
                     html += '<i class="fa fa-star rating-star"></i>';
                 }
@@ -345,7 +348,10 @@
                 }
                 html += `<p>${rating.content}</p>`
             }
+            average_ratings = Math.round(total_ratings / data.length,2)
             $('#ratings').html(html);
+            $('#total-reviews').html("(" +data.length + " reviews)");
+            $('#total-reviews-tab').html("(" + data.length + ")");
         });
       }
       loadRatings();
