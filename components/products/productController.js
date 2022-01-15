@@ -10,7 +10,7 @@ exports.getProduct = (req, res) => {
         .then((item)=>{
             res.render('../components/products/shop_details', {productId: item._id, quantity:item.quantity, price: item.price, 
                 item: item.item, imageLink: item.imageLink, availability: item.availability, shipping: item.shipping, weight: item.weight, 
-            description: item.description});
+            description: item.description, category: item.category});
         })
         .catch((error)=>{
             res.status(500).json({

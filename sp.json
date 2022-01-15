@@ -1,0 +1,233 @@
+[
+    {
+        "quantity": 30,
+        "price": 40.00,
+        "item": "Apple",
+        "imageLink": "/img/product/details/apple.jpg",
+        "availability": "In Stock",
+        "shipping": "Free pickup today",
+        "weight": "2 kg",
+        "description": "From sweet red varieties, like Red Delicious, Fuji or Gala, to tangy green ones, like Granny Smith — my personal favorite that I enjoy with lime juice and a little salt when I want a savory snack — there sure is an apple for everyone. They’re commonly used in recipes, like pies, cookies, muffins, jam, salads, oatmeal, or smoothies. They also make a great snack on their own or wedged and smeared with nut butter. In addition to their culinary versatility and numerous colors and flavors to choose from, apples are an exceptionally healthy fruit with many research-backed benefits. Here are eight impressive health benefits of apples.",
+        "category": "Fruit"
+    },
+    {
+        "quantity": 35,
+        "price": 15.00,
+        "item": "Banana",
+        "imageLink": "/img/product/details/banana.jpg",
+        "availability": "In Stock",
+        "shipping": "Free pickup today",
+        "weight": "1 kg",
+        "description": "From sweet red varieties, like Red Delicious, Fuji or Gala, to tangy green ones, like Granny Smith — my personal favorite that I enjoy with lime juice and a little salt when I want a savory snack — there sure is an apple for everyone. They’re commonly used in recipes, like pies, cookies, muffins, jam, salads, oatmeal, or smoothies. They also make a great snack on their own or wedged and smeared with nut butter. In addition to their culinary versatility and numerous colors and flavors to choose from, apples are an exceptionally healthy fruit with many research-backed benefits. Here are eight impressive health benefits of apples.",
+        "category": "Fruit"
+    },
+    {
+        "quantity": 45,
+        "price": 15.00,
+        "item": "Banh mi",
+        "imageLink": "/img/product/details/banhmi.jpg",
+        "availability": "In Stock",
+        "shipping": "Free pickup today",
+        "weight": "0.1 kg",
+        "description": "From sweet red varieties, like Red Delicious, Fuji or Gala, to tangy green ones, like Granny Smith — my personal favorite that I enjoy with lime juice and a little salt when I want a savory snack — there sure is an apple for everyone. They’re commonly used in recipes, like pies, cookies, muffins, jam, salads, oatmeal, or smoothies. They also make a great snack on their own or wedged and smeared with nut butter. In addition to their culinary versatility and numerous colors and flavors to choose from, apples are an exceptionally healthy fruit with many research-backed benefits. Here are eight impressive health benefits of apples.",
+        "category": "Fast food"
+    },
+    {
+        "quantity": 100,
+        "price": 70.00,
+        "item": "Blueberry",
+        "imageLink": "/img/product/details/blueberry.jpg",
+        "availability": "In Stock",
+        "shipping": "Free pickup today",
+        "weight": "1 kg",
+        "description": "From sweet red varieties, like Red Delicious, Fuji or Gala, to tangy green ones, like Granny Smith — my personal favorite that I enjoy with lime juice and a little salt when I want a savory snack — there sure is an apple for everyone. They’re commonly used in recipes, like pies, cookies, muffins, jam, salads, oatmeal, or smoothies. They also make a great snack on their own or wedged and smeared with nut butter. In addition to their culinary versatility and numerous colors and flavors to choose from, apples are an exceptionally healthy fruit with many research-backed benefits. Here are eight impressive health benefits of apples.",
+        "category": "Fruit"
+    },
+    {
+        "quantity": 30,
+        "price": 40.00,
+        "item": "Butter",
+        "imageLink": "/img/product/details/butter.jpg",
+        "availability": "In Stock",
+        "shipping": "Free pickup today",
+        "weight": "0.3 kg",
+        "description": "From sweet red varieties, like Red Delicious, Fuji or Gala, to tangy green ones, like Granny Smith — my personal favorite that I enjoy with lime juice and a little salt when I want a savory snack — there sure is an apple for everyone. They’re commonly used in recipes, like pies, cookies, muffins, jam, salads, oatmeal, or smoothies. They also make a great snack on their own or wedged and smeared with nut butter. In addition to their culinary versatility and numerous colors and flavors to choose from, apples are an exceptionally healthy fruit with many research-backed benefits. Here are eight impressive health benefits of apples.",
+        "category": "Butter and Eggs"
+    },
+    {
+        "quantity": 32,
+        "price": 80.00,
+        "item": "Chestnut",
+        "imageLink": "/img/product/details/chestnut.jpg",
+        "availability": "In Stock",
+        "shipping": "Free pickup today",
+        "weight": "0.5 kg",
+        "description": "From sweet red varieties, like Red Delicious, Fuji or Gala, to tangy green ones, like Granny Smith — my personal favorite that I enjoy with lime juice and a little salt when I want a savory snack — there sure is an apple for everyone. They’re commonly used in recipes, like pies, cookies, muffins, jam, salads, oatmeal, or smoothies. They also make a great snack on their own or wedged and smeared with nut butter. In addition to their culinary versatility and numerous colors and flavors to choose from, apples are an exceptionally healthy fruit with many research-backed benefits. Here are eight impressive health benefits of apples.",
+        "category": "Nut"
+    },
+    {
+        "quantity": 10,
+        "price": 75.00,
+        "item": "Chicken",
+        "imageLink": "/img/product/details/chicken.jpg",
+        "availability": "In Stock",
+        "shipping": "Free pickup today",
+        "weight": "1 kg",
+        "description": "From sweet red varieties, like Red Delicious, Fuji or Gala, to tangy green ones, like Granny Smith — my personal favorite that I enjoy with lime juice and a little salt when I want a savory snack — there sure is an apple for everyone. They’re commonly used in recipes, like pies, cookies, muffins, jam, salads, oatmeal, or smoothies. They also make a great snack on their own or wedged and smeared with nut butter. In addition to their culinary versatility and numerous colors and flavors to choose from, apples are an exceptionally healthy fruit with many research-backed benefits. Here are eight impressive health benefits of apples.",
+        "category": "Meat"
+    },
+    {
+        "quantity": 100,
+        "price": 20.00,
+        "item": "Dragon Fruit",
+        "imageLink": "/img/product/details/dragonfruit.jpg",
+        "availability": "In Stock",
+        "shipping": "Free pickup today",
+        "weight": "1 kg",
+        "description": "From sweet red varieties, like Red Delicious, Fuji or Gala, to tangy green ones, like Granny Smith — my personal favorite that I enjoy with lime juice and a little salt when I want a savory snack — there sure is an apple for everyone. They’re commonly used in recipes, like pies, cookies, muffins, jam, salads, oatmeal, or smoothies. They also make a great snack on their own or wedged and smeared with nut butter. In addition to their culinary versatility and numerous colors and flavors to choose from, apples are an exceptionally healthy fruit with many research-backed benefits. Here are eight impressive health benefits of apples.",
+        "category": "Fruit"
+    },
+    {
+        "quantity": 30,
+        "price": 10.00,
+        "item": "Eggs",
+        "imageLink": "/img/product/details/eggduck.jpg",
+        "availability": "In Stock",
+        "shipping": "Free pickup today",
+        "weight": "0.3 kg",
+        "description": "From sweet red varieties, like Red Delicious, Fuji or Gala, to tangy green ones, like Granny Smith — my personal favorite that I enjoy with lime juice and a little salt when I want a savory snack — there sure is an apple for everyone. They’re commonly used in recipes, like pies, cookies, muffins, jam, salads, oatmeal, or smoothies. They also make a great snack on their own or wedged and smeared with nut butter. In addition to their culinary versatility and numerous colors and flavors to choose from, apples are an exceptionally healthy fruit with many research-backed benefits. Here are eight impressive health benefits of apples.",
+        "category": "Butter and Eggs"
+    },
+    {
+        "quantity": 10,
+        "price": 40.00,
+        "item": "Hamburger",
+        "imageLink": "/img/product/details/hamburger.jpg",
+        "availability": "In Stock",
+        "shipping": "Free pickup today",
+        "weight": "0.1 kg",
+        "description": "From sweet red varieties, like Red Delicious, Fuji or Gala, to tangy green ones, like Granny Smith — my personal favorite that I enjoy with lime juice and a little salt when I want a savory snack — there sure is an apple for everyone. They’re commonly used in recipes, like pies, cookies, muffins, jam, salads, oatmeal, or smoothies. They also make a great snack on their own or wedged and smeared with nut butter. In addition to their culinary versatility and numerous colors and flavors to choose from, apples are an exceptionally healthy fruit with many research-backed benefits. Here are eight impressive health benefits of apples.",
+        "category": "Fast food"
+    },
+    {
+        "quantity": 33,
+        "price": 90.00,
+        "item": "Lychee",
+        "imageLink": "/img/product/details/lychee.jpg",
+        "availability": "In Stock",
+        "shipping": "Free pickup today",
+        "weight": "1 kg",
+        "description": "From sweet red varieties, like Red Delicious, Fuji or Gala, to tangy green ones, like Granny Smith — my personal favorite that I enjoy with lime juice and a little salt when I want a savory snack — there sure is an apple for everyone. They’re commonly used in recipes, like pies, cookies, muffins, jam, salads, oatmeal, or smoothies. They also make a great snack on their own or wedged and smeared with nut butter. In addition to their culinary versatility and numerous colors and flavors to choose from, apples are an exceptionally healthy fruit with many research-backed benefits. Here are eight impressive health benefits of apples.",
+        "category": "Fruit"
+    },
+    {
+        "quantity": 45,
+        "price": 103.00,
+        "item": "Meat",
+        "imageLink": "/img/product/details/meat.jpg",
+        "availability": "In Stock",
+        "shipping": "Free pickup today",
+        "weight": "1 kg",
+        "description": "From sweet red varieties, like Red Delicious, Fuji or Gala, to tangy green ones, like Granny Smith — my personal favorite that I enjoy with lime juice and a little salt when I want a savory snack — there sure is an apple for everyone. They’re commonly used in recipes, like pies, cookies, muffins, jam, salads, oatmeal, or smoothies. They also make a great snack on their own or wedged and smeared with nut butter. In addition to their culinary versatility and numerous colors and flavors to choose from, apples are an exceptionally healthy fruit with many research-backed benefits. Here are eight impressive health benefits of apples.",
+        "category": "Meat"
+    },
+    {
+        "quantity": 102,
+        "price": 34.00,
+        "item": "Orange",
+        "imageLink": "/img/product/details/orange.jpg",
+        "availability": "In Stock",
+        "shipping": "Free pickup today",
+        "weight": "1 kg",
+        "description": "From sweet red varieties, like Red Delicious, Fuji or Gala, to tangy green ones, like Granny Smith — my personal favorite that I enjoy with lime juice and a little salt when I want a savory snack — there sure is an apple for everyone. They’re commonly used in recipes, like pies, cookies, muffins, jam, salads, oatmeal, or smoothies. They also make a great snack on their own or wedged and smeared with nut butter. In addition to their culinary versatility and numerous colors and flavors to choose from, apples are an exceptionally healthy fruit with many research-backed benefits. Here are eight impressive health benefits of apples.",
+        "category": "Fruit"
+    },
+    {
+        "quantity": 94,
+        "price": 39.00,
+        "item": "Passion Fruit",
+        "imageLink": "/img/product/details/passionfruit.jpg",
+        "availability": "In Stock",
+        "shipping": "Free pickup today",
+        "weight": "1 kg",
+        "description": "From sweet red varieties, like Red Delicious, Fuji or Gala, to tangy green ones, like Granny Smith — my personal favorite that I enjoy with lime juice and a little salt when I want a savory snack — there sure is an apple for everyone. They’re commonly used in recipes, like pies, cookies, muffins, jam, salads, oatmeal, or smoothies. They also make a great snack on their own or wedged and smeared with nut butter. In addition to their culinary versatility and numerous colors and flavors to choose from, apples are an exceptionally healthy fruit with many research-backed benefits. Here are eight impressive health benefits of apples.",
+        "category": "Fruit"
+    },
+    {
+        "quantity": 101,
+        "price": 31.00,
+        "item": "Peanut",
+        "imageLink": "/img/product/details/peanut.jpg",
+        "availability": "In Stock",
+        "shipping": "Free pickup today",
+        "weight": "1 kg",
+        "description": "From sweet red varieties, like Red Delicious, Fuji or Gala, to tangy green ones, like Granny Smith — my personal favorite that I enjoy with lime juice and a little salt when I want a savory snack — there sure is an apple for everyone. They’re commonly used in recipes, like pies, cookies, muffins, jam, salads, oatmeal, or smoothies. They also make a great snack on their own or wedged and smeared with nut butter. In addition to their culinary versatility and numerous colors and flavors to choose from, apples are an exceptionally healthy fruit with many research-backed benefits. Here are eight impressive health benefits of apples.",
+        "category": "Nut"
+    },
+    {
+        "quantity": 99,
+        "price": 130.00,
+        "item": "Shrimp",
+        "imageLink": "/img/product/details/shrimp.jpg",
+        "availability": "In Stock",
+        "shipping": "Free pickup today",
+        "weight": "1 kg",
+        "description": "From sweet red varieties, like Red Delicious, Fuji or Gala, to tangy green ones, like Granny Smith — my personal favorite that I enjoy with lime juice and a little salt when I want a savory snack — there sure is an apple for everyone. They’re commonly used in recipes, like pies, cookies, muffins, jam, salads, oatmeal, or smoothies. They also make a great snack on their own or wedged and smeared with nut butter. In addition to their culinary versatility and numerous colors and flavors to choose from, apples are an exceptionally healthy fruit with many research-backed benefits. Here are eight impressive health benefits of apples.",
+        "category": "Seafood"
+    },
+    {
+        "quantity": 101,
+        "price": 200.00,
+        "item": "Squid",
+        "imageLink": "/img/product/details/squid.jpg",
+        "availability": "In Stock",
+        "shipping": "Free pickup today",
+        "weight": "1 kg",
+        "description": "From sweet red varieties, like Red Delicious, Fuji or Gala, to tangy green ones, like Granny Smith — my personal favorite that I enjoy with lime juice and a little salt when I want a savory snack — there sure is an apple for everyone. They’re commonly used in recipes, like pies, cookies, muffins, jam, salads, oatmeal, or smoothies. They also make a great snack on their own or wedged and smeared with nut butter. In addition to their culinary versatility and numerous colors and flavors to choose from, apples are an exceptionally healthy fruit with many research-backed benefits. Here are eight impressive health benefits of apples.",
+        "category": "Seafood"
+    },
+    {
+        "quantity": 201,
+        "price": 89.00,
+        "item": "Strawberries",
+        "imageLink": "/img/product/details/strawberries.jpg",
+        "availability": "In Stock",
+        "shipping": "Free pickup today",
+        "weight": "1 kg",
+        "description": "From sweet red varieties, like Red Delicious, Fuji or Gala, to tangy green ones, like Granny Smith — my personal favorite that I enjoy with lime juice and a little salt when I want a savory snack — there sure is an apple for everyone. They’re commonly used in recipes, like pies, cookies, muffins, jam, salads, oatmeal, or smoothies. They also make a great snack on their own or wedged and smeared with nut butter. In addition to their culinary versatility and numerous colors and flavors to choose from, apples are an exceptionally healthy fruit with many research-backed benefits. Here are eight impressive health benefits of apples.",
+        "category": "Fruit"
+    },
+    {
+        "quantity": 12,
+        "price": 54.00,
+        "item": "Tuna Fish",
+        "imageLink": "/img/product/details/tunafish.jpg",
+        "availability": "In Stock",
+        "shipping": "Free pickup today",
+        "weight": "1 kg",
+        "description": "From sweet red varieties, like Red Delicious, Fuji or Gala, to tangy green ones, like Granny Smith — my personal favorite that I enjoy with lime juice and a little salt when I want a savory snack — there sure is an apple for everyone. They’re commonly used in recipes, like pies, cookies, muffins, jam, salads, oatmeal, or smoothies. They also make a great snack on their own or wedged and smeared with nut butter. In addition to their culinary versatility and numerous colors and flavors to choose from, apples are an exceptionally healthy fruit with many research-backed benefits. Here are eight impressive health benefits of apples.",
+        "category": "Seafood"
+    },
+    {
+        "quantity": 132,
+        "price": 32.00,
+        "item": "Watermelon",
+        "imageLink": "/img/product/details/watermelon.jpg",
+        "availability": "In Stock",
+        "shipping": "Free pickup today",
+        "weight": "1 kg",
+        "description": "From sweet red varieties, like Red Delicious, Fuji or Gala, to tangy green ones, like Granny Smith — my personal favorite that I enjoy with lime juice and a little salt when I want a savory snack — there sure is an apple for everyone. They’re commonly used in recipes, like pies, cookies, muffins, jam, salads, oatmeal, or smoothies. They also make a great snack on their own or wedged and smeared with nut butter. In addition to their culinary versatility and numerous colors and flavors to choose from, apples are an exceptionally healthy fruit with many research-backed benefits. Here are eight impressive health benefits of apples.",
+        "category": "Fruit"
+    },
+    {
+        "quantity": 112,
+        "price": 99.00,
+        "item": "Crab",
+        "imageLink": "/img/product/details/crab.jpg",
+        "availability": "In Stock",
+        "shipping": "Free pickup today",
+        "weight": "1 kg",
+        "description": "From sweet red varieties, like Red Delicious, Fuji or Gala, to tangy green ones, like Granny Smith — my personal favorite that I enjoy with lime juice and a little salt when I want a savory snack — there sure is an apple for everyone. They’re commonly used in recipes, like pies, cookies, muffins, jam, salads, oatmeal, or smoothies. They also make a great snack on their own or wedged and smeared with nut butter. In addition to their culinary versatility and numerous colors and flavors to choose from, apples are an exceptionally healthy fruit with many research-backed benefits. Here are eight impressive health benefits of apples.",
+        "category": "Seafood"
+    }
+]

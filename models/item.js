@@ -34,6 +34,10 @@ const Item = mongoose.model("Item", {
   weight: {
     type: String,
     trim: true,
+  },
+  category: {
+    type: String,
+    trim: true,
   }
 });
 
