@@ -8,7 +8,6 @@ const userSchema = new mongoose.Schema({
   },
   sex: {
     type: String,
-    required: true,
     trim: true,
   },
   role: {
@@ -36,17 +35,17 @@ const userSchema = new mongoose.Schema({
   }
   //status là trạng thai user, nếu lock thì không login được, không lock thì login đc
 });
-userSchema.statics.login = async (account, password) => {
-  const user = await User.findOne({ account });
+// userSchema.statics.login = async (account, password) => {
+//   const user = await User.findOne({ account });
 
-  if (!user) {
-    throw new Error("Unable to login");
-  }
-  if (password == user.password || user.status === 'lock') {
-    throw new Error("Unable to login");
-  }
+//   if (!user) {
+//     throw new Error("Unable to login");
+//   }
+//   if (password == user.password || user.status === 'lock') {
+//     throw new Error("Unable to login");
+//   }
 
-  return user;
-};
+//   return user;
+// };
 const User = mongoose.model("User", userSchema);
 module.exports = User;

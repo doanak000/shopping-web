@@ -78,3 +78,23 @@
     margin-right: 5px;
 }
 
+.customer-name{
+    width: 180px;
+    height: 40px;
+    margin-top: 10px;
+    text-indent: 10px;
+}
+
+.cust-name{
+    margin-bottom: 0 !important;
+    margin-top: 10px !important;
+}
+
+.inputname{
+    clear: both;
+}
+
+.reviews-head {
+    font-size: 24px;
+}
+

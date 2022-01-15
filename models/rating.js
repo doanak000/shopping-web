@@ -4,6 +4,10 @@ const Rating = mongoose.model("Rating", {
   productId: {
     type: mongoose.Schema.Types.ObjectId
   },
+  customer: {
+    type: String,
+    maxlength: 100
+  },
   rating: {
       type: Number
   },

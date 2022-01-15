@@ -6,7 +6,7 @@ const Item = mongoose.model("Item", {
     required: true,
   },
   price: {
-    type: Number,
+    type: mongoose.Decimal128,
     required: true,
   },
   item: {
