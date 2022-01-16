@@ -6,7 +6,6 @@ exports.register = async (firstname, lastname, username, password, birthday, add
     console.log(firstname, lastname, username, password, birthday, address)
     //check if username is already registerd
     const account = await Account.findOne({ account: username});
-    console.log(account)
     if (account){
         throw new Error("username already registered");
     }

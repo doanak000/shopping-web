@@ -1,6 +1,9 @@
 const authService = require("./authService");
+const Account = require("../../models/user");
+
 exports.register = async (req, res) => {
     const { firstname, lastname, username, password, confirmpassword, birthday, address} = req.body;
+    const account = await Account.findOne({ account: username});
     try {
         if(!firstname){
             res.render('../components/auth/register', { err1: "Please fill in your first name", firstname, lastname, username, password, birthday, address});
@@ -10,6 +13,9 @@ exports.register = async (req, res) => {
         }
         else if(!username){
             res.render('../components/auth/register', { err3: "Please fill in your username", firstname, lastname, username, password, birthday, address});
+        }
+        else if(account){
+            res.render('../components/auth/register', { existedusername: "This username existed", firstname, lastname, username, password, birthday, address});
         }
         else if(!password){
             res.render('../components/auth/register', { err4: "Please fill in your password", firstname, lastname, username, password, birthday, address});
