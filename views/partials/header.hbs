@@ -20,7 +20,15 @@
               </div>
               {{#if user}}
                 <div class="header__top__right__social">
-                  <a href="/profile">My Account</a>
+                  <ul></ul>
+                  <div id="myaccount">
+                      <a href="/profile">My Account <i class="far fa-caret-square-down"></i></a>
+                      <div class="dropdown-content">
+                        <a href="/profile">View Profile</a>
+                        <a href="profile/changepassword">Edit Password</a>
+                      </div>
+                  </div>
+                  
                 </div>
                 <div class="header__top__right__auth">
                   <a href="/logout"><i class="fa fa-user"></i>Logout</a>
