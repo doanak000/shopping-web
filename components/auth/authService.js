@@ -2,8 +2,8 @@ const bcrypt = require("bcryptjs");
 // const Account = require("../../models/account");
 const Account = require("../../models/user");
 
-exports.register = async (firstname, lastname, username, password, address) => {
-    console.log(firstname, lastname, username, password, address)
+exports.register = async (firstname, lastname, username, password, birthday, address) => {
+    console.log(firstname, lastname, username, password, birthday, address)
     //check if username is already registerd
     const account = await Account.findOne({ account: username});
     console.log(account)
@@ -12,5 +12,16 @@ exports.register = async (firstname, lastname, username, password, address) => {
     }
 
     const hashPassword = await bcrypt.hash(password, 10);
-    return await Account.create({name: firstname + " " + lastname, sex: "", role: "user", address: address, account: username, password: hashPassword})
+    return await Account.create({name: firstname + " " + lastname, sex: "", role: "user", birthday: birthday, address: address, account: username, password: hashPassword})
+};
+
+exports.edit = async (name, username, birthday, address) => {
+    //check if username is existed
+    const account = await Account.findOne({ account: username});
+    if (!account){
+        throw new Error("The account does not exist!");
+    }
+    const filter = { account: username };
+    const update = {name: name, birthday: birthday, address: address};
+    return await Account.findOneAndUpdate(filter, update);
 };

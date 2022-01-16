@@ -6,13 +6,13 @@ const userSchema = new mongoose.Schema({
     required: true,
     trim: true,
   },
-  sex: {
-    type: String,
-    trim: true,
-  },
   role: {
     type: String,
     default: 0,
+  },
+  birthday: {
+    type: String,
+    trim: true,
   },
   address: {
     type: String,

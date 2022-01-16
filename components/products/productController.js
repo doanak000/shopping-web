@@ -3,9 +3,6 @@ const Item = require("../../models/item");
 var url = require('url');
 
 exports.getProduct = (req, res) => {
-    // console.log("==================================")
-    // console.log(req.params.id)
-    // res.render('../components/products/shop_details');
     Item.findById(req.params.id)
         .then((item)=>{
             res.render('../components/products/shop_details', {productId: item._id, quantity:item.quantity, price: item.price, 

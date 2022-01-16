@@ -4,6 +4,7 @@ const db = require("./db/mongoose");
 var path = require("path");
 var cookieParser = require("cookie-parser");
 var logger = require("morgan");
+const methodOverride = require("method-override");
 const passport = require("./auth/passport");
 const session = require('express-session');
 const expressHandlebarsSections = require("express-handlebars-sections");
@@ -57,6 +58,7 @@ app.engine('hbs', hbs.engine);
 app.set("view engine", "hbs");
 app.set("views", path.join(__dirname, "views"));
 
+app.use(methodOverride('_method'));
 app.use(logger("dev"));
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));

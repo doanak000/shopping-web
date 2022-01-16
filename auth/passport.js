@@ -32,7 +32,7 @@ async function verifyPassword(user, password){
 }
 
 passport.serializeUser(function(user, done) {
-  done(null, {account: user.account, name: user.name, sex: user.sex, address: user.address});
+  done(null, {account: user.account, name: user.name, sex: user.sex, birthday: user.birthday, address: user.address});
 });
 
 passport.deserializeUser(function(user, done) {
