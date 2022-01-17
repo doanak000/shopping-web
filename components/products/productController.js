@@ -1,6 +1,6 @@
 const Rating = require("../../models/rating");
 const Item = require("../../models/item");
-var url = require('url');
+//var url = require('url');
 
 exports.getProduct = (req, res) => {
     Item.findById(req.params.id)

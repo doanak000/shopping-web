@@ -1,30 +1,32 @@
-var createError = require("http-errors");
-var express = require("express");
+const createError = require("http-errors");
+const express = require("express");
 const db = require("./db/mongoose");
-var path = require("path");
-var cookieParser = require("cookie-parser");
-var logger = require("morgan");
+const path = require("path");
+const cookieParser = require("cookie-parser");
+const logger = require("morgan");
 const methodOverride = require("method-override");
 const passport = require("./auth/passport");
 const session = require('express-session');
 const expressHandlebarsSections = require("express-handlebars-sections");
 
-var homeRouter = require("./routes/home");
-var shopgridRouter = require("./routes/shop_grid");
-var shopdetailsRouter = require("./routes/shop_details");
-var productdetailsRouter = require("./components/products/product_details");
-var shopingcartRouter = require("./components/cart/shoping_cart");
-var checkoutRouter = require("./components/orders/checkout");
-var loginRouter = require("./components/auth/login");
-var logoutRouter = require("./components/auth/logout");
+//
+const route = require('./routes/index')
+const homeRouter = require("./routes/home");
+const shopgridRouter = require("./routes/shop_grid");
+const shopdetailsRouter = require("./routes/shop_details");
+const productdetailsRouter = require("./components/products/product_details");
+const shopingcartRouter = require("./components/cart/shoping_cart");
+const checkoutRouter = require("./components/orders/checkout");
+const loginRouter = require("./components/auth/login");
+const logoutRouter = require("./components/auth/logout");
 const registerRouter = require("./components/auth/register");
 const profileRouter = require("./components/profile/profile");
 const itemRouter = require("./routes/item");
 
-var app = express();
+const app = express();
 const Handlebars = require('handlebars');
-// var { engine } = require("express-handlebars");
-var exphbs = require("express-handlebars");
+// const { engine } = require("express-handlebars");
+const exphbs = require("express-handlebars");
 const {allowInsecurePrototypeAccess} = require('@handlebars/allow-prototype-access');
 
 // view engine setup
@@ -41,7 +43,14 @@ const {allowInsecurePrototypeAccess} = require('@handlebars/allow-prototype-acce
 //     }
 //   }
 // }));
-var hbs = exphbs.create({
+Handlebars.registerHelper('times', function(n, block) {
+  var accum = '';
+  for(var i = 0; i < n; ++i)
+      accum += block.fn(i);
+  return accum;
+});
+
+const hbs = exphbs.create({
   defaultLayout: "main",
   extname: ".hbs",
   helpers: {
@@ -49,12 +58,19 @@ var hbs = exphbs.create({
       if (!this._sections) this._sections = {};
       this._sections[name] = options.fn(this);
       return null;
+    },
+    times: function(n, block) {
+      var accum = '';
+      for(var i = 1; i < n; ++i)
+          accum += block.fn(i);
+      return accum;
     }
   }
-})
+});
+
+
 
 app.engine('hbs', hbs.engine);
-
 app.set("view engine", "hbs");
 app.set("views", path.join(__dirname, "views"));
 
@@ -91,7 +107,6 @@ app.use("/logout", logoutRouter);
 app.use("/register", registerRouter);
 app.use("/profile", profileRouter);
 
-
 app.use(itemRouter);
 
 
@@ -110,5 +125,6 @@ app.use(function (err, req, res, next) {
   res.status(err.status || 500);
   res.render("error", { layout: false });
 });
+
 
 module.exports = app;
