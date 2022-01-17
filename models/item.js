@@ -1,6 +1,7 @@
-const mongoose = require("mongoose");
-
-const Item = mongoose.model("Item", {
+const mongoose = require('mongoose');
+const mongoosePaginate = require('mongoose-paginate-v2');
+//import { mongoosePaginate } from 'mongoose-paginate-v2'
+const itemSchema = new mongoose.Schema({
   quantity: {
     type: Number,
     required: true,
@@ -41,4 +42,6 @@ const Item = mongoose.model("Item", {
   }
 });
 
-module.exports = Item;
+itemSchema.plugin( mongoosePaginate );
+
+module.exports = mongoose.model('Item', itemSchema)

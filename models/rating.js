@@ -1,6 +1,6 @@
 const mongoose = require("mongoose");
 
-const Rating = mongoose.model("Rating", {
+const ratingSchema = mongoose.model("Rating", {
   productId: {
     type: mongoose.Schema.Types.ObjectId
   },
@@ -17,4 +17,4 @@ const Rating = mongoose.model("Rating", {
   }
 });
 
-module.exports = Rating;
+module.exports = ratingSchema;
