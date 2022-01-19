@@ -6,7 +6,6 @@ function route(app){
 
     app.use('/user', usersRouter)
     app.use('/products', shopgridRouter)
-    //app.use('/item', shopdetailsRouter)
     app.use('/', homeRouter)
 };
 

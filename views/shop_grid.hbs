@@ -479,9 +479,10 @@
                   </div>
                 </div>
             {{/each}}
-
+          
           <div class="product__pagination">
-              {{#times 6}}
+              <br>
+              {{#times pages}}
                 <a href="/products?page={{this}}">{{this}}</a>
               {{/times}}
               <a href="#"><i class="fa fa-long-arrow-right"></i></a>

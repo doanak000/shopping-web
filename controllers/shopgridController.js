@@ -57,7 +57,9 @@ class shopgridController{
         
     }
       //Get: /items/:category
-    show_cate(req, res, next){
+      //Get: /items/:category
+      show_cate(req, res, next)
+      {
         var page = req.query.page || 1;
         const PAGE_SIZE = 6;   
         page = parseInt(page);
@@ -66,12 +68,13 @@ class shopgridController{
               .skip(skip)
               .limit(PAGE_SIZE)
               .then((items) => {
-                res.render('shop_grid2',{items: MultiMongoosetoObject(items)});
+                res.render('shop_grid',{items: MultiMongoosetoObject(items)});
                 })
               .catch((err) => {
                 res.status(500).json("loi server");
                 });
-    }
-}
+            }
 
-module.exports = new shopgridController;
+
+          }
+module.exports = new shopgridController

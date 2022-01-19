@@ -8,7 +8,6 @@ router.get('/', function(req, res, next) {
 });
 
 
-
 router.get('/product/:id', productController.getProduct);
 
 // router.get('/product/619f522f86b9f5e644f9722c', productController.getFistProduct);

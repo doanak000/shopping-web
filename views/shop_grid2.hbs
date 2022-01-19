@@ -477,9 +477,13 @@
                       <h5>${{this.price}}</h5>
                     </div>
                   </div>
-                </div>
-            
+                </div>   
           {{/each}}
+           <div class="product__pagination">
+              <br>
+              {{#times pages}}
+                <a href="/products?page={{this}}">{{this}}</a>
+              {{/times}}
               <a href="#"><i class="fa fa-long-arrow-right"></i></a>
           </div>
         </div>
