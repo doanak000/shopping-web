@@ -126,7 +126,7 @@ app.use(function (err, req, res, next) {
   res.render("error", { layout: false });
 });
 route(app);
-const port = 4000;
+const port = process.env.PORT || 3000;
 
 app.listen(port, () => {
   console.log(`Example app listening at http://localhost:${port}`)
