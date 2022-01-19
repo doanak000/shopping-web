@@ -13,7 +13,7 @@ const expressHandlebarsSections = require("express-handlebars-sections");
 const route = require('./routes')
 const homeRouter = require("./routes/home");
 const shopgridRouter = require("./routes/shop_grid");
-const shopdetailsRouter = require("./routes/shop_details");
+//const shopdetailsRouter = require("./routes/shop_details");
 const productdetailsRouter = require("./components/products/product_details");
 const shopingcartRouter = require("./components/cart/shoping_cart");
 const checkoutRouter = require("./components/orders/checkout");
@@ -94,19 +94,18 @@ app.use(function(req, res, next){
 
 //connect DB
 db.connect();
-route(app);
-//app.use("/", homeRouter);
-//app.use("/shop-grid", shopgridRouter);
-// app.use("/shop-details", shopdetailsRouter);
-//app.use("/shop-details", productdetailsRouter);
-// app.use("/shop-details/:id", productdetailsRouter);
+app.use("/", homeRouter);
+app.use("/shop-grid", shopgridRouter);
+app.use("/shop-details", productdetailsRouter);
+app.use("/shop-details", productdetailsRouter);
+app.use("/shop-details/:id", productdetailsRouter);
 app.use("/shoping-cart", shopingcartRouter);
 app.use("/checkout", checkoutRouter);
 app.use("/login", loginRouter);
 app.use("/logout", logoutRouter);
 app.use("/register", registerRouter);
 app.use("/profile", profileRouter);
-
+route(app);
 app.use(itemRouter);
 
 
@@ -125,11 +124,9 @@ app.use(function (err, req, res, next) {
   res.status(err.status || 500);
   res.render("error", { layout: false });
 });
-route(app);
-const port = process.env.PORT || 3000;
+//route(app);
 
-app.listen(port, () => {
-  console.log(`Example app listening at http://localhost:${port}`)
+app.listen(process.env.PORT || 5000, function(){
+  console.log("Express server listening on port %d in %s mode", this.address().port, app.settings.env);
 });
-
 module.exports = app;

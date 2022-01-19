@@ -57,8 +57,7 @@ class shopgridController{
         
     }
       //Get: /items/:category
-    show_cate(req, res, next)
-      {
+    show_cate(req, res, next){
         var page = req.query.page || 1;
         const PAGE_SIZE = 6;   
         page = parseInt(page);
@@ -72,7 +71,7 @@ class shopgridController{
               .catch((err) => {
                 res.status(500).json("loi server");
                 });
-            }
+    }
+}
 
-          }
 module.exports = new shopgridController;
