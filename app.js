@@ -10,7 +10,7 @@ const session = require('express-session');
 const expressHandlebarsSections = require("express-handlebars-sections");
 
 //
-const route = require('./routes/index')
+const route = require('./routes')
 const homeRouter = require("./routes/home");
 const shopgridRouter = require("./routes/shop_grid");
 const shopdetailsRouter = require("./routes/shop_details");
@@ -94,11 +94,11 @@ app.use(function(req, res, next){
 
 //connect DB
 db.connect();
-
-app.use("/", homeRouter);
-app.use("/shop-grid", shopgridRouter);
+route(app);
+//app.use("/", homeRouter);
+//app.use("/shop-grid", shopgridRouter);
 // app.use("/shop-details", shopdetailsRouter);
-app.use("/shop-details", productdetailsRouter);
+//app.use("/shop-details", productdetailsRouter);
 // app.use("/shop-details/:id", productdetailsRouter);
 app.use("/shoping-cart", shopingcartRouter);
 app.use("/checkout", checkoutRouter);
@@ -125,6 +125,11 @@ app.use(function (err, req, res, next) {
   res.status(err.status || 500);
   res.render("error", { layout: false });
 });
+route(app);
+const port = 4000;
 
+app.listen(port, () => {
+  console.log(`Example app listening at http://localhost:${port}`)
+});
 
 module.exports = app;

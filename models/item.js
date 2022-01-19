@@ -39,6 +39,10 @@ const itemSchema = new mongoose.Schema({
   category: {
     type: String,
     trim: true,
+  },
+  views:{
+    type: Number,
+    default : 0,
   }
 });
 

@@ -5,15 +5,12 @@ class shop_detailsController{
     //Get : /item/:_id
     show(req, res, next) 
     {
-        const ObjectId = require('mongodb').ObjectId;
-        const id = ObjectId(req.params.id);
-        Item.findOne( {_id: id })
+        Item.findById( {_id: req.params._id })
             .then(
                 itemdetails => res.render('shop_details',{ itemdetails:MongoosetoObject(itemdetails)})
             )
             .catch(next)
-    }
-    
+    }  
 }
 
 module.exports = new shop_detailsController;

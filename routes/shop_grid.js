@@ -1,15 +1,10 @@
 var express = require('express');
 var router = express.Router();
 
-console.log("nhuuuuuuu")
+const shopgridController = require('../controllers/shopgridController')
 /* GET shop-grid page. */
-router.get('/nhu', function(req, res, next) {
-  console.log("11111111111111111111111")
-  res.render('home');
-});
-router.get('/', function(req, res, next) {
-  res.render('shop_grid');
-});
+router.get('/:category', shopgridController.show_cate)
+router.get('/', shopgridController.index)
 
 
 module.exports = router;
