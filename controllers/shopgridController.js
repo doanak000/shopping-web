@@ -67,7 +67,7 @@ class shopgridController{
               .skip(skip)
               .limit(PAGE_SIZE)
               .then((items) => {
-                res.render('shop_grid',{items: MultiMongoosetoObject(items)});
+                res.render('shop_grid2',{items: MultiMongoosetoObject(items)});
                 })
               .catch((err) => {
                 res.status(500).json("loi server");

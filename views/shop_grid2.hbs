@@ -457,9 +457,9 @@
                       class="product__item__pic set-bg"
                       data-setbg="{{this.imageLink}}"
                     >
-                      <a href="item/{{this._id}}">
-                        <h5 class="image-title">{{this.item}}</h5>
-                    </a>
+                       <a href="item/{{this._id}}">
+                          <h5 class="image-title">{{this.item}}</h5>
+                      </a>
                       <ul class="product__item__pic__hover">
                         <li>
                           <a href="/item/{{this._id}}"><i class="fa fa-heart"></i></a>
@@ -467,9 +467,7 @@
                         <li>
                           <a href="/item/{{this._id}}"><i class="fa fa-retweet"></i></a>
                         </li>
-                        <li>
-                          <a href="/item/{{this._id}}><i class="fa fa-shopping-cart"></i></a>
-                        </li>
+                       
                       </ul>
                     </div>
                     <div class="product__item__text">
@@ -478,12 +476,8 @@
                     </div>
                   </div>
                 </div>
-            {{/each}}
-
-          <div class="product__pagination">
-              {{#times 6}}
-                <a href="/items?page={{this}}">{{this}}</a>
-              {{/times}}
+            
+          {{/each}}
               <a href="#"><i class="fa fa-long-arrow-right"></i></a>
           </div>
         </div>
