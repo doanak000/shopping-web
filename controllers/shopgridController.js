@@ -1,6 +1,6 @@
 const { MultiMongoosetoObject } = require('../ulti/mongoose');
 const Item = require('../models/item')
-
+const { MongoosetoObject } =  require('../ulti/mongoose');
 class shopgridController{
     //Get item: /items
 
@@ -64,17 +64,21 @@ class shopgridController{
         const PAGE_SIZE = 6;   
         page = parseInt(page);
         var skip = (page - 1) * PAGE_SIZE;
-        Item.find({category: req.params.category})
+        let cate = req.params.category;
+        Item.find({category: cate})
               .skip(skip)
               .limit(PAGE_SIZE)
-              .then((items) => {
-                res.render('shop_grid',{items: MultiMongoosetoObject(items)});
-                })
-              .catch((err) => {
-                res.status(500).json("loi server");
-                });
-            }
-
+              .exec(function(err, items) {
+                Item.count().exec(function(err, count) {
+                    res.render('shop_grid_2', {
+                        items: MultiMongoosetoObject(items),
+                        category: cate,
+                        page: page,
+                        pages: (count / PAGE_SIZE) })
+                    })
+                  })
+            
+          }
 
           }
 module.exports = new shopgridController

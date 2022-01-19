@@ -302,12 +302,13 @@
                     </div>
                   </div>
                 </div>
-            {{/each}}
-          
+            
+          {{/each}}
+          <br>
           <div class="product__pagination">
               
               {{#times pages}}
-                <a href="/products?page={{this}}">{{this}}</a>
+                <a href="/products/{{cate}}?page={{this}}">{{this}}</a>
               {{/times}}
               <a href="#"><i class="fa fa-long-arrow-right"></i></a>
           </div>
